@@ -3,7 +3,7 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-05-31T17:17:56+02:00</updated>
+    <updated>2019-05-31T17:31:01+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
@@ -78,7 +78,7 @@
         <link href="https://fr.usini.eu/une-batterie-tr-909-a-base-desp8266/"/>
         <id>https://fr.usini.eu/une-batterie-tr-909-a-base-desp8266/</id>
 
-        <updated>2019-05-31T16:18:09+02:00</updated>
+        <updated>2019-05-31T17:30:58+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/13/tr909.jpg" alt="" />
@@ -122,7 +122,6 @@
 <li class="buttonContainer-KtQ8wc">Choisir le port midi (qui sera le nom de l'ordinateur)</li>
 </ul>
 <div class="buttonContainer-KtQ8wc"> </div>
-<div class="buttonContainer-KtQ8wc"><img class="post__image--center" src="https://fr.usini.eu/media/posts/13/lmms.png" alt="" width="277" height="477"></div>
 <div class="buttonContainer-KtQ8wc">J'ai un son parasite régulier sur le son, aucune idée d'où ça vient mais sinon le son est pas mal.</div>
 <div class="buttonContainer-KtQ8wc"><audio controls="controls"><source src="/media/files/tr909.mp3" type="audio/mp3" /><source src="/media/files/tr909.ogg" type="audio/ogg" /></audio>  </div>
 <div class="buttonContainer-KtQ8wc"> </div>
