@@ -3,12 +3,40 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-05-31T18:26:45+02:00</updated>
+    <updated>2019-05-31T18:42:00+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
     <id>https://fr.usini.eu</id>
 
+    <entry>
+        <title>Contrôleur Alternatif (Fanthome)</title>
+        <author>
+            <name>Rémi Sarrailh</name>
+        </author>
+        <link href="https://fr.usini.eu/controleur-alternatif-fanthome/"/>
+        <id>https://fr.usini.eu/controleur-alternatif-fanthome/</id>
+
+        <updated>2019-05-31T18:41:55+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://fr.usini.eu/media/posts/16/fanthome.jpg" alt="" />
+                    Dans le cadre de la Global Game Jam, nous avons créer un&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://fr.usini.eu/media/posts/16/fanthome.jpg" alt="" />
+                <p>Dans le cadre de la Global Game Jam, nous avons créer un contrôleur alternatif afin de montrer le potentiel de créer une interface entre le jouet / jeu vidéo. <br><br>J'ai eu l'occasion de le faire tester le lundi 4 février 2019 au gazette café. Voilà la vidéo de présentation.</p>
+<figure class="post__video"><iframe width="560" height="314" src="https://www.youtube.com/embed/ZBx6jxl1Sbk" allowfullscreen="allowfullscreen" ></iframe></figure>
+<p>Voilà le code source : <a title="https://github.com/maditnerd/fanthome_controller/" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/maditnerd/fanthome_controller/" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/maditnerd/fanthome_controller/</a></p>
+<p>Détail intéressant apparement il est possible avec un arduino micro de faire un périphérique manette USB + Série.</p>
+<p>Ceci permettrait de gérer les inputs comme une manette, tout en laissant la possibilité de gérer les outputs (afficheur LCD / Leds etc...) par le série ce qui peut être intéressant.</p>
+<p>La v1 utilisaient cette bibliothèque : <a title="https://github.com/relativty/wrmhl" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/relativty/wrmhl" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/relativty/wrmhl</a> <br><br>A noter aussi qu'il existe un plugin pour utiliser mqtt dans unity ce qui permettraient de faire une interface en 3D d'une maison domotisé (pas très utile mais ça peut faire une démo vachement classe)</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Capteur Météo MQTT sur ESP32</title>
         <author>
@@ -338,25 +366,6 @@ window.location="https://wikifab.org/wiki/Afficher_une_image_sur_un_%C3%A9cran_S
                     <img src="https://fr.usini.eu/media/posts/7/jinx.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Contr%C3%B4ler_des_neopixels_comme_un_DJ"
-// ]]></script>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Du pixel art sur vos écrans OLED</title>
-        <author>
-            <name>Rémi Sarrailh</name>
-        </author>
-        <link href="https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/"/>
-        <id>https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/</id>
-
-        <updated>2019-05-31T15:15:07+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://fr.usini.eu/media/posts/6/pixelart_hack.jpg" alt="" />
-                <script>// <![CDATA[
-window.location="https://wikifab.org/wiki/Du_pixelart_sur_vos_%C3%A9crans_OLED"
 // ]]></script>
             ]]>
         </content>

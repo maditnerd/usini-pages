@@ -11,6 +11,21 @@
     },
     "items": [
         {
+            "id": "https://fr.usini.eu/controleur-alternatif-fanthome/",
+            "url": "https://fr.usini.eu/controleur-alternatif-fanthome/",
+            "title": "Contrôleur Alternatif (Fanthome)",
+            "summary": "Dans le cadre de la Global Game Jam, nous avons créer un&hellip;",
+            "content_html": "<p>Dans le cadre de la Global Game Jam, nous avons créer un contrôleur alternatif afin de montrer le potentiel de créer une interface entre le jouet / jeu vidéo. <br><br>J'ai eu l'occasion de le faire tester le lundi 4 février 2019 au gazette café. Voilà la vidéo de présentation.</p>\n<figure class=\"post__video\"><iframe width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/ZBx6jxl1Sbk\" allowfullscreen=\"allowfullscreen\" ></iframe></figure>\n<p>Voilà le code source : <a title=\"https://github.com/maditnerd/fanthome_controller/\" class=\"anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB\" href=\"https://github.com/maditnerd/fanthome_controller/\" rel=\"noopener noreferrer\" target=\"_blank\" role=\"button\" tabindex=\"0\">https://github.com/maditnerd/fanthome_controller/</a></p>\n<p>Détail intéressant apparement il est possible avec un arduino micro de faire un périphérique manette USB + Série.</p>\n<p>Ceci permettrait de gérer les inputs comme une manette, tout en laissant la possibilité de gérer les outputs (afficheur LCD / Leds etc...) par le série ce qui peut être intéressant.</p>\n<p>La v1 utilisaient cette bibliothèque : <a title=\"https://github.com/relativty/wrmhl\" class=\"anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB\" href=\"https://github.com/relativty/wrmhl\" rel=\"noopener noreferrer\" target=\"_blank\" role=\"button\" tabindex=\"0\">https://github.com/relativty/wrmhl</a> <br><br>A noter aussi qu'il existe un plugin pour utiliser mqtt dans unity ce qui permettraient de faire une interface en 3D d'une maison domotisé (pas très utile mais ça peut faire une démo vachement classe)</p>\n<p> </p>",
+            "image": "https://fr.usini.eu/media/posts/16/fanthome.jpg",
+            "author": {
+                "name": "Rémi Sarrailh"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-05-31T18:41:55+02:00",
+            "date_modified": "2019-05-31T18:41:55+02:00"
+        },
+        {
             "id": "https://fr.usini.eu/capteur-meteo-mqtt-sur-esp32/",
             "url": "https://fr.usini.eu/capteur-meteo-mqtt-sur-esp32/",
             "title": "Capteur Météo MQTT sur ESP32",
@@ -140,20 +155,6 @@
             ],
             "date_published": "2019-05-31T13:36:23+02:00",
             "date_modified": "2019-05-31T18:26:30+02:00"
-        },
-        {
-            "id": "https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/",
-            "url": "https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/",
-            "title": "Du pixel art sur vos écrans OLED",
-            "content_html": "<script>// <![CDATA[\nwindow.location=\"https://wikifab.org/wiki/Du_pixelart_sur_vos_%C3%A9crans_OLED\"\n// ]]></script>",
-            "image": "https://fr.usini.eu/media/posts/6/pixelart_hack.jpg",
-            "author": {
-                "name": "Rémi Sarrailh"
-            },
-            "tags": [
-            ],
-            "date_published": "2019-05-31T13:36:08+02:00",
-            "date_modified": "2019-05-31T15:15:07+02:00"
         }
     ]
 }
