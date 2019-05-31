@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Usini</title>
-    <link href="https://usini.eu/feed.xml" rel="self" />
-    <link href="https://usini.eu" />
-    <updated>2019-05-31T14:29:38+02:00</updated>
+    <link href="https://fr.usini.eu/feed.xml" rel="self" />
+    <link href="https://fr.usini.eu" />
+    <updated>2019-05-31T14:42:06+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
-    <id>https://usini.eu</id>
+    <id>https://fr.usini.eu</id>
 
     <entry>
         <title>Caméra à base d&#x27;esp32</title>
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/camera-a-base-desp32/"/>
-        <id>https://usini.eu/camera-a-base-desp32/</id>
+        <link href="https://fr.usini.eu/camera-a-base-desp32/"/>
+        <id>https://fr.usini.eu/camera-a-base-desp32/</id>
 
         <updated>2019-05-31T14:12:06+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://usini.eu/media/posts/11/esp32cam.jpg" alt="" />
+                        <img src="https://fr.usini.eu/media/posts/11/esp32cam.jpg" alt="" />
                     Intrigué par cette caméra à 9€ 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/11/esp32cam.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/11/esp32cam.jpg" alt="" />
                 Intrigué par cette caméra à 9€
 <div class="channels-Ie2l6A vertical-V37hAW flex-1O1GKY directionColumn-35P_nr"> </div>
 <div class="chat-3bRxxu firefoxFixScrollFlex-cnI2ix"> </div>
@@ -38,14 +38,14 @@
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/"/>
-        <id>https://usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/</id>
+        <link href="https://fr.usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/"/>
+        <id>https://fr.usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/</id>
 
         <updated>2019-05-31T13:57:04+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/10/USBHOSTMINI_hack.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/10/USBHOSTMINI_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Brancher_des_p%C3%A9riph%C3%A9riques_USB_sur_un_ESP8266"
 // ]]></script>
@@ -57,14 +57,14 @@ window.location="https://wikifab.org/wiki/Brancher_des_p%C3%A9riph%C3%A9riques_U
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/mini-ecran-connecte/"/>
-        <id>https://usini.eu/mini-ecran-connecte/</id>
+        <link href="https://fr.usini.eu/mini-ecran-connecte/"/>
+        <id>https://fr.usini.eu/mini-ecran-connecte/</id>
 
         <updated>2019-05-31T13:57:18+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/9/tft_iftt_hack.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/9/tft_iftt_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Mini_%C3%A9cran_connect%C3%A9"
 // ]]></script>
@@ -76,14 +76,14 @@ window.location="https://wikifab.org/wiki/Mini_%C3%A9cran_connect%C3%A9"
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/afficher-une-image-sur-un-ecran-st7789/"/>
-        <id>https://usini.eu/afficher-une-image-sur-un-ecran-st7789/</id>
+        <link href="https://fr.usini.eu/afficher-une-image-sur-un-ecran-st7789/"/>
+        <id>https://fr.usini.eu/afficher-une-image-sur-un-ecran-st7789/</id>
 
         <updated>2019-05-31T13:57:29+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/8/stt7789_hack.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/8/stt7789_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Afficher_une_image_sur_un_%C3%A9cran_ST7789"
 // ]]></script>
@@ -95,14 +95,14 @@ window.location="https://wikifab.org/wiki/Afficher_une_image_sur_un_%C3%A9cran_S
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/"/>
-        <id>https://usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/</id>
+        <link href="https://fr.usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/"/>
+        <id>https://fr.usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/</id>
 
         <updated>2019-05-31T13:57:43+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/7/jinx.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/7/jinx.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Contr%C3%B4ler_des_neopixels_comme_un_DJ"
 // ]]></script>
@@ -114,14 +114,14 @@ window.location="https://wikifab.org/wiki/Contr%C3%B4ler_des_neopixels_comme_un_
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/du-pixel-art-sur-vos-ecrans-oled/"/>
-        <id>https://usini.eu/du-pixel-art-sur-vos-ecrans-oled/</id>
+        <link href="https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/"/>
+        <id>https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/</id>
 
         <updated>2019-05-31T13:57:52+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/6/pixelart_hack.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/6/pixelart_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Du_pixelart_sur_vos_%C3%A9crans_OLED"
 // ]]></script>
@@ -133,14 +133,14 @@ window.location="https://wikifab.org/wiki/Du_pixelart_sur_vos_%C3%A9crans_OLED"
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/envoyer-un-message-sur-discord/"/>
-        <id>https://usini.eu/envoyer-un-message-sur-discord/</id>
+        <link href="https://fr.usini.eu/envoyer-un-message-sur-discord/"/>
+        <id>https://fr.usini.eu/envoyer-un-message-sur-discord/</id>
 
         <updated>2019-05-31T13:58:02+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/5/discord_hack.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/5/discord_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location = "https://wikifab.org/wiki/Envoyer_un_message_sur_discord"
 // ]]></script>
@@ -152,14 +152,14 @@ window.location = "https://wikifab.org/wiki/Envoyer_un_message_sur_discord"
         <author>
             <name>Rémi Sarrailh</name>
         </author>
-        <link href="https://usini.eu/pave-numerique-midi/"/>
-        <id>https://usini.eu/pave-numerique-midi/</id>
+        <link href="https://fr.usini.eu/pave-numerique-midi/"/>
+        <id>https://fr.usini.eu/pave-numerique-midi/</id>
 
         <updated>2019-05-31T13:58:14+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://usini.eu/media/posts/4/keypadmidi_hack.jpg" alt="" />
+                    <img src="https://fr.usini.eu/media/posts/4/keypadmidi_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location = "https://wikifab.org/wiki/Pav%C3%A9_Num%C3%A9rique_MIDI"
 // ]]></script>

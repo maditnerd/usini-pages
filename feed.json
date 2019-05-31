@@ -2,21 +2,21 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Usini",
     "description": "",
-    "home_page_url": "https://usini.eu",
-    "feed_url": "https://usini.eu/feed.json",
+    "home_page_url": "https://fr.usini.eu",
+    "feed_url": "https://fr.usini.eu/feed.json",
     "user_comment": "",
-    "icon": "https://usini.eu/media/website/logo_final.png",
+    "icon": "https://fr.usini.eu/media/website/logo_final.png",
     "author": {
         "name": "Rémi Sarrailh"
     },
     "items": [
         {
-            "id": "https://usini.eu/camera-a-base-desp32/",
-            "url": "https://usini.eu/camera-a-base-desp32/",
+            "id": "https://fr.usini.eu/camera-a-base-desp32/",
+            "url": "https://fr.usini.eu/camera-a-base-desp32/",
             "title": "Caméra à base d&#x27;esp32",
             "summary": "Intrigué par cette caméra à 9€ ",
             "content_html": "Intrigué par cette caméra à 9€\n<div class=\"channels-Ie2l6A vertical-V37hAW flex-1O1GKY directionColumn-35P_nr\"> </div>\n<div class=\"chat-3bRxxu firefoxFixScrollFlex-cnI2ix\"> </div>",
-            "image": "https://usini.eu/media/posts/11/esp32cam.jpg",
+            "image": "https://fr.usini.eu/media/posts/11/esp32cam.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -26,11 +26,11 @@
             "date_modified": "2019-05-31T14:12:06+02:00"
         },
         {
-            "id": "https://usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/",
-            "url": "https://usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/",
+            "id": "https://fr.usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/",
+            "url": "https://fr.usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/",
             "title": "Brancher des périphériques USB sur un ESP8266",
             "content_html": "<script>// <![CDATA[\nwindow.location=\"https://wikifab.org/wiki/Brancher_des_p%C3%A9riph%C3%A9riques_USB_sur_un_ESP8266\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/10/USBHOSTMINI_hack.jpg",
+            "image": "https://fr.usini.eu/media/posts/10/USBHOSTMINI_hack.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -40,11 +40,11 @@
             "date_modified": "2019-05-31T13:57:04+02:00"
         },
         {
-            "id": "https://usini.eu/mini-ecran-connecte/",
-            "url": "https://usini.eu/mini-ecran-connecte/",
+            "id": "https://fr.usini.eu/mini-ecran-connecte/",
+            "url": "https://fr.usini.eu/mini-ecran-connecte/",
             "title": "Mini écran connecté",
             "content_html": "<script>// <![CDATA[\nwindow.location=\"https://wikifab.org/wiki/Mini_%C3%A9cran_connect%C3%A9\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/9/tft_iftt_hack.jpg",
+            "image": "https://fr.usini.eu/media/posts/9/tft_iftt_hack.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -54,11 +54,11 @@
             "date_modified": "2019-05-31T13:57:18+02:00"
         },
         {
-            "id": "https://usini.eu/afficher-une-image-sur-un-ecran-st7789/",
-            "url": "https://usini.eu/afficher-une-image-sur-un-ecran-st7789/",
+            "id": "https://fr.usini.eu/afficher-une-image-sur-un-ecran-st7789/",
+            "url": "https://fr.usini.eu/afficher-une-image-sur-un-ecran-st7789/",
             "title": "Afficher une image sur un écran ST7789",
             "content_html": "<script>// <![CDATA[\nwindow.location=\"https://wikifab.org/wiki/Afficher_une_image_sur_un_%C3%A9cran_ST7789\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/8/stt7789_hack.jpg",
+            "image": "https://fr.usini.eu/media/posts/8/stt7789_hack.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -68,11 +68,11 @@
             "date_modified": "2019-05-31T13:57:29+02:00"
         },
         {
-            "id": "https://usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/",
-            "url": "https://usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/",
+            "id": "https://fr.usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/",
+            "url": "https://fr.usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/",
             "title": "Contrôler des neopixels comme un technicien lumière",
             "content_html": "<script>// <![CDATA[\nwindow.location=\"https://wikifab.org/wiki/Contr%C3%B4ler_des_neopixels_comme_un_DJ\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/7/jinx.jpg",
+            "image": "https://fr.usini.eu/media/posts/7/jinx.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -82,11 +82,11 @@
             "date_modified": "2019-05-31T13:57:43+02:00"
         },
         {
-            "id": "https://usini.eu/du-pixel-art-sur-vos-ecrans-oled/",
-            "url": "https://usini.eu/du-pixel-art-sur-vos-ecrans-oled/",
+            "id": "https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/",
+            "url": "https://fr.usini.eu/du-pixel-art-sur-vos-ecrans-oled/",
             "title": "Du pixel art sur vos écrans OLED",
             "content_html": "<script>// <![CDATA[\nwindow.location=\"https://wikifab.org/wiki/Du_pixelart_sur_vos_%C3%A9crans_OLED\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/6/pixelart_hack.jpg",
+            "image": "https://fr.usini.eu/media/posts/6/pixelart_hack.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -96,11 +96,11 @@
             "date_modified": "2019-05-31T13:57:52+02:00"
         },
         {
-            "id": "https://usini.eu/envoyer-un-message-sur-discord/",
-            "url": "https://usini.eu/envoyer-un-message-sur-discord/",
+            "id": "https://fr.usini.eu/envoyer-un-message-sur-discord/",
+            "url": "https://fr.usini.eu/envoyer-un-message-sur-discord/",
             "title": "Envoyer un message sur discord",
             "content_html": "<script>// <![CDATA[\nwindow.location = \"https://wikifab.org/wiki/Envoyer_un_message_sur_discord\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/5/discord_hack.jpg",
+            "image": "https://fr.usini.eu/media/posts/5/discord_hack.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
@@ -110,11 +110,11 @@
             "date_modified": "2019-05-31T13:58:02+02:00"
         },
         {
-            "id": "https://usini.eu/pave-numerique-midi/",
-            "url": "https://usini.eu/pave-numerique-midi/",
+            "id": "https://fr.usini.eu/pave-numerique-midi/",
+            "url": "https://fr.usini.eu/pave-numerique-midi/",
             "title": "Pavé Numérique Midi",
             "content_html": "<script>// <![CDATA[\nwindow.location = \"https://wikifab.org/wiki/Pav%C3%A9_Num%C3%A9rique_MIDI\"\n// ]]></script>",
-            "image": "https://usini.eu/media/posts/4/keypadmidi_hack.jpg",
+            "image": "https://fr.usini.eu/media/posts/4/keypadmidi_hack.jpg",
             "author": {
                 "name": "Rémi Sarrailh"
             },
