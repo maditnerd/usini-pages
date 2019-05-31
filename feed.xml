@@ -3,12 +3,44 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-05-31T18:42:00+02:00</updated>
+    <updated>2019-05-31T18:57:10+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
     <id>https://fr.usini.eu</id>
 
+    <entry>
+        <title>Capteur de couleur (TCS34725)</title>
+        <author>
+            <name>Rémi Sarrailh</name>
+        </author>
+        <link href="https://fr.usini.eu/capteur-de-couleur-tcs34725/"/>
+        <id>https://fr.usini.eu/capteur-de-couleur-tcs34725/</id>
+
+        <updated>2019-05-31T18:57:03+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://fr.usini.eu/media/posts/17/colorsensor.jpg" alt="" />
+                    J'avais un capteur capable de détecter les couleurs qui trainait et il&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://fr.usini.eu/media/posts/17/colorsensor.jpg" alt="" />
+                <p>J'avais un capteur capable de détecter les couleurs qui trainait et il n’est vraiment pas terrible (le <a href="https://fr.aliexpress.com/item/32756856801.html">TCS3200</a>)</p>
+<p> <img class="post__image--center" src="https://fr.usini.eu/media/posts/17/colorsensortcs20000.png" alt="" width="263" height="236"></p>
+<p>Du coup, j'ai acheter la version plus évolué le <a href="https://fr.aliexpress.com/item/32832224010.html">TCS34725</a>.<br>Ce capteur communique en I2C.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/17/colorsensortcs34725.png" alt="" width="214" height="284"></p>
+<p> </p>
+<div class="align-center">
+<blockquote class="twitter-tweet" >
+<p dir="ltr" lang="en">Change led colors using a color sensor !<br>This is an <a href="https://twitter.com/arduino?ref_src=twsrc%5Etfw">@Arduino</a> nano with TCS34725 color sensor and neopixels ring.<br><br>You can buy these on <a href="https://twitter.com/adafruit?ref_src=twsrc%5Etfw">@Adafruit</a> which is always a great source for projects / ideas 😍 <a href="https://t.co/MYQgJEPJV2">pic.twitter.com/MYQgJEPJV2</a></p>
+— Rémi Sarrailh (@m4dnerd) <a href="https://twitter.com/m4dnerd/status/1103424844723560449?ref_src=twsrc%5Etfw">6 mars 2019</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Contrôleur Alternatif (Fanthome)</title>
         <author>
@@ -347,25 +379,6 @@ window.location="https://wikifab.org/wiki/Mini_%C3%A9cran_connect%C3%A9"
                     <img src="https://fr.usini.eu/media/posts/8/stt7789_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Afficher_une_image_sur_un_%C3%A9cran_ST7789"
-// ]]></script>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Contrôler des neopixels comme un technicien lumière</title>
-        <author>
-            <name>Rémi Sarrailh</name>
-        </author>
-        <link href="https://fr.usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/"/>
-        <id>https://fr.usini.eu/controler-des-neopixels-comme-un-technicien-lumiere/</id>
-
-        <updated>2019-05-31T18:26:30+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://fr.usini.eu/media/posts/7/jinx.jpg" alt="" />
-                <script>// <![CDATA[
-window.location="https://wikifab.org/wiki/Contr%C3%B4ler_des_neopixels_comme_un_DJ"
 // ]]></script>
             ]]>
         </content>
