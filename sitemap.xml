@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/camera-a-base-desp32/</loc>
-<lastmod>2019-05-31T16:18:24+02:00</lastmod>
+<lastmod>2019-06-03T13:38:33+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\11/esp32cam.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -66,7 +66,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/capteur-de-couleur-tcs34725/</loc>
-<lastmod>2019-05-31T18:57:03+02:00</lastmod>
+<lastmod>2019-06-03T13:13:05+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\17/colorsensor.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -82,7 +82,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/capteur-meteo-mqtt-sur-esp32/</loc>
-<lastmod>2019-05-31T19:01:32+02:00</lastmod>
+<lastmod>2019-06-03T13:24:08+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\15/esp32mqtt.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -102,7 +102,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/controleur-alternatif-fanthome/</loc>
-<lastmod>2019-05-31T18:59:14+02:00</lastmod>
+<lastmod>2019-06-03T13:28:42+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\16/fanthome.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -110,7 +110,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/creer-une-manette-xbox360-a-base-darduino/</loc>
-<lastmod>2019-05-31T15:57:38+02:00</lastmod>
+<lastmod>2019-06-03T13:28:50+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\14/xbox360.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -125,6 +125,18 @@
 </image:image>
 </url>
 <url>
+<loc>https://fr.usini.eu/envoyer-un-calendrier-sur-discord-avec-node-red/</loc>
+<lastmod>2019-06-03T13:02:12+02:00</lastmod>
+<image:image>
+<image:loc>https://fr.usini.eu/media\posts\18/discord_ical.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://fr.usini.eu/media\posts\18/node-red-ical-discord.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://fr.usini.eu/envoyer-un-message-sur-discord/</loc>
 <lastmod>2019-05-31T18:26:37+02:00</lastmod>
 <image:image>
@@ -134,7 +146,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/micro-numerique-pour-esp32/</loc>
-<lastmod>2019-05-31T15:21:51+02:00</lastmod>
+<lastmod>2019-06-03T13:36:16+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\12/micro.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -174,7 +186,7 @@
 </url>
 <url>
 <loc>https://fr.usini.eu/une-batterie-tr-909-a-base-desp8266/</loc>
-<lastmod>2019-05-31T18:25:41+02:00</lastmod>
+<lastmod>2019-06-03T13:34:09+02:00</lastmod>
 <image:image>
 <image:loc>https://fr.usini.eu/media\posts\13/tr909.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>

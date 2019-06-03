@@ -3,12 +3,57 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-06-01T17:08:28+02:00</updated>
+    <updated>2019-06-03T13:52:41+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
     <id>https://fr.usini.eu</id>
 
+    <entry>
+        <title>Envoyer un Calendrier sur discord avec node-red</title>
+        <author>
+            <name>Rémi Sarrailh</name>
+        </author>
+        <link href="https://fr.usini.eu/envoyer-un-calendrier-sur-discord-avec-node-red/"/>
+        <id>https://fr.usini.eu/envoyer-un-calendrier-sur-discord-avec-node-red/</id>
+
+        <updated>2019-06-03T13:02:12+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://fr.usini.eu/media/posts/18/discord_ical.jpg" alt="" />
+                    J'ai crée un bot discord, qui va lire le calendrier du labsud&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://fr.usini.eu/media/posts/18/discord_ical.jpg" alt="" />
+                <p>J'ai crée un bot discord, qui va lire le calendrier du labsud pour afficher s'il y a des nouvelles formations.</p>
+<p><img class="post__image" src="https://fr.usini.eu/media/posts/18/node-red-ical-discord.png" width="1096" height="272"></p>
+<p>Ca a été une sacrée galère pour convertir le <strong>format ical</strong> vers quelque chose de lisible par contre, j'ai pas trouvé de plugins pour ça 😐<br>Bon le format en soit n'est pas compliqué donc ça va..<br>C'est loin d'être optimiser mais c'est fonctionnel !</p>
+<script src="https://gist.github.com/maditnerd/e55a021828f9a0f2b015ac7f7d571bb4.js"></script>
+<p> J'ai aussi eu un soucis avec la <strong>comparaison</strong>, quand je lis le fichier<strong> il ajoute un \n</strong> à la fin d'où la <strong>fonction bug</strong> qui le retire. <br><br>Pour garder en mémoire la nouvelle version du calendrier je la mets <strong>dans la variable flow.</strong> <br><br>S'il n'y a pas de nouveaux ateliers, il ignore et ne relance pas de messages sur discord. <br><br>J'aurais pu comparer la version brute du calendrier <strong>mais il y a une variable (DTSTAMP)</strong> qui se met à jour à chaque requête donc c'était plus casse pied.<br><br></p>
+<div class="containerCozy-336-Cz container-206Blv">
+<div class="markup-2BOw-j">Pour la partie création de bot : <a title="https://www.freecodecamp.org/news/how-to-create-a-discord-bot-under-15-minutes-fb2fd0083844/" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://www.freecodecamp.org/news/how-to-create-a-discord-bot-under-15-minutes-fb2fd0083844/" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://www.freecodecamp.org/news/how-to-create-a-discord-bot-under-15-minutes-fb2fd0083844/</a></div>
+</div>
+<p>Voci le flow (pro-tip <strong>les identifiants ne sont pas sauvegardés dans les flows</strong>) <br><br>Dépendances (manage palettes)</p>
+<ul>
+<li>node-red-contrib-fs-ops</li>
+<li>node-red-contrib-discord</li>
+</ul>
+<p>Node à changer</p>
+<ul>
+<li>Récupération HTTP Ical (Mettre lien vers ical)</li>
+<li><span class="pl-s">Calendrier.xml existe ?</span> (Mettre chemin / nom du fichier)</li>
+<li>Lire calendrier.xml (Mettre chemin / nom du fichier)</li>
+<li>Créer calendrier.xml (Mettre chemin / nom du fichier)</li>
+<li>Ecrit calendrier.xml (Mettre chemin / nom du fichier)</li>
+<li>Envoi sur Discord (Token Discord / Channel ID)</li>
+<li>File Delete (Mettre chemin / nom du fichier)</li>
+</ul>
+<script src="https://gist.github.com/maditnerd/55b5a7d29a985ee62dac818cded01946.js"></script>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Capteur de couleur (TCS34725)</title>
         <author>
@@ -17,7 +62,7 @@
         <link href="https://fr.usini.eu/capteur-de-couleur-tcs34725/"/>
         <id>https://fr.usini.eu/capteur-de-couleur-tcs34725/</id>
 
-        <updated>2019-05-31T18:57:03+02:00</updated>
+        <updated>2019-06-03T13:13:05+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/17/colorsensor.jpg" alt="" />
@@ -27,10 +72,10 @@
         <content type="html">
             <![CDATA[
                     <img src="https://fr.usini.eu/media/posts/17/colorsensor.jpg" alt="" />
-                <p>J'avais un capteur capable de détecter les couleurs qui trainait et il n’est vraiment pas terrible (le <a href="https://fr.aliexpress.com/item/32756856801.html">TCS3200</a>)</p>
-<p> <img class="post__image--center" src="https://fr.usini.eu/media/posts/17/colorsensortcs20000.png" alt="" width="263" height="236"></p>
-<p>Du coup, j'ai acheter la version plus évolué le <a href="https://fr.aliexpress.com/item/32832224010.html">TCS34725</a>.<br>Ce capteur communique en I2C.</p>
-<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/17/colorsensortcs34725.png" alt="" width="214" height="284"></p>
+                <p>J'avais un capteur capable de détecter les couleurs qui trainait et il n’est vraiment pas terrible (le <a href="http://s.click.aliexpress.com/e/n2LNbis">TCS3200</a>)</p>
+<p> <a href="http://s.click.aliexpress.com/e/n2LNbis"><img class="post__image--center" src="https://fr.usini.eu/media/posts/17/colorsensortcs20000.png" alt="" width="263" height="236"></a></p>
+<p>Du coup, j'ai acheter la version plus évolué le <a href="http://s.click.aliexpress.com/e/ctWCmNvI">TCS34725</a>.<br>Ce capteur communique en I2C.</p>
+<p><a href="http://s.click.aliexpress.com/e/ctWCmNvI"><img class="post__image--center" src="https://fr.usini.eu/media/posts/17/colorsensortcs34725.png" alt="" width="214" height="284"></a></p>
 <p> </p>
 <div class="align-center">
 <blockquote class="twitter-tweet" >
@@ -49,7 +94,7 @@
         <link href="https://fr.usini.eu/controleur-alternatif-fanthome/"/>
         <id>https://fr.usini.eu/controleur-alternatif-fanthome/</id>
 
-        <updated>2019-05-31T18:59:14+02:00</updated>
+        <updated>2019-06-03T13:28:42+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/16/fanthome.jpg" alt="" />
@@ -65,6 +110,13 @@
 <p>Détail intéressant apparement il est possible avec un arduino micro de faire un périphérique manette USB + Série.</p>
 <p>Ceci permettrait de gérer les inputs comme une manette, tout en laissant la possibilité de gérer les outputs (afficheur LCD / Leds etc...) par le série ce qui peut être intéressant.</p>
 <p>La v1 utilisaient cette bibliothèque : <a title="https://github.com/relativty/wrmhl" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/relativty/wrmhl" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/relativty/wrmhl</a> <br><br>A noter aussi qu'il existe un plugin pour utiliser mqtt dans unity ce qui permettraient de faire une interface en 3D d'une maison domotisé (pas très utile mais ça peut faire une démo vachement classe)</p>
+<p><span style="text-decoration: underline;">Composants</span></p>
+<ul>
+<li><a href="http://s.click.aliexpress.com/e/bkaPi1J2">Arduino Micro 5v (clone)</a></li>
+<li><a href="http://s.click.aliexpress.com/e/r48eW1S">Slider</a></li>
+<li><a href="http://s.click.aliexpress.com/e/cNtONRhq">Reed Switch (Détecteur Ouverture Porte)</a></li>
+<li>...</li>
+</ul>
 <p> </p>
             ]]>
         </content>
@@ -77,7 +129,7 @@
         <link href="https://fr.usini.eu/capteur-meteo-mqtt-sur-esp32/"/>
         <id>https://fr.usini.eu/capteur-meteo-mqtt-sur-esp32/</id>
 
-        <updated>2019-05-31T19:01:32+02:00</updated>
+        <updated>2019-06-03T13:24:08+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/15/esp32mqtt.jpg" alt="" />
@@ -97,10 +149,18 @@
 <li>avec un afficheur</li>
 <li>Sur batterie.</li>
 </ul>
-<p>Dès qu'on se rapproche du capteur, l'écran affiche les données. <br>Le Wemos Lolin Lite est pas terrible pour ça vu qu'il <strong>consomme 800uA</strong> en mode veille.</p>
+<p>Dès qu'on se rapproche du capteur, l'écran affiche les données. <br>Le Wemos Lolin Lite est pas terrible pour ça vu qu'il <strong>consomme 800uA</strong> en mode veille.<br>Un clone du wemos Lolin serait meilleur pour cette tâche (100ua) ou le TTGO ESP32 (200ua) <a href="https://docs.google.com/spreadsheets/d/1Mu-bNwpnkiNUiM7f2dx8-gPnIAFMibsC2hMlWhIHbPQ/edit#gid=0">d'après Andreas Spiess</a>.</p>
 <p>Les données sont destinés à être envoyés à un serveur MQTT avec chiffrement et vérification du certificat, pour le moment je fais mumuse à envoyer les données sur un <a href="#INTERNAL_LINK#/post/5">serveur discord privé.</a></p>
 <p>Mon code marche avec MQTT, si vous voulez apprendre à l'utiliser, je vous conseille de commencer avec<a href="adafruit.io"> adafruit io</a>. ça permet de ne pas avoir à se soucier de la partie serveur. Autre avantage, il est possible de partager un tableau de bord.</p>
 <p><a href="../../../../../media/files/weatherstation.zip" title="Lien direct vers le code">/media/files/weatherstation.zip</a></p>
+<p><span style="text-decoration: underline;">Composants</span></p>
+<ul>
+<li><a href="http://s.click.aliexpress.com/e/gEJ2g7Q">Capteur Météo I2C Température / Humidité / Pression Atmosphérique : BME280</a></li>
+<li><a href="http://s.click.aliexpress.com/e/b8ismxg8">Capteur luminosité I2C : TSL2561</a></li>
+<li><a href="http://s.click.aliexpress.com/e/b7aDZlsy">Ecran OLED 128x32 : SSD1306</a></li>
+<li><a href="http://s.click.aliexpress.com/e/cAIAVnYU">Capteur PIR 3.3V</a></li>
+<li><a href="http://s.click.aliexpress.com/e/bp4weqTe">Wemos Lolin (clone)</a></li>
+</ul>
 <p><img class="post__image--center align-center" src="https://fr.usini.eu/media/posts/15/weather_station.jpg" alt="" width="793" height="1008"></p>
             ]]>
         </content>
@@ -113,7 +173,7 @@
         <link href="https://fr.usini.eu/creer-une-manette-xbox360-a-base-darduino/"/>
         <id>https://fr.usini.eu/creer-une-manette-xbox360-a-base-darduino/</id>
 
-        <updated>2019-05-31T15:57:38+02:00</updated>
+        <updated>2019-06-03T13:28:50+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/14/xbox360.jpg" alt="" />
@@ -126,6 +186,10 @@
                 <p>Je pensais qu'on pouvait pas émuler une manette de XBOX360 mais apparemment si.</p>
 <p><a title="https://www.partsnotincluded.com/programming/arduino-xinput-library/" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://www.partsnotincluded.com/programming/arduino-xinput-library/" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://www.partsnotincluded.com/programming/arduino-xinput-library/</a> <a title="https://github.com/dmadison/ArduinoXInput" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/dmadison/ArduinoXInput" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/dmadison/ArduinoXInput</a></p>
 <p>La plupart du temps, les bibliothèques Arduino émule des <strong>manettes DirectInput</strong>, le problème c'est que <strong>Microsoft a tout fait pour que pratiquement plus aucun jeux</strong> ne les gèrent (afin de vendre des manettes de xbox360 sur le pc). </p>
+<ul>
+<li><a href="http://s.click.aliexpress.com/e/bkaPi1J2">Arduino Micro 5v (clone)</a></li>
+</ul>
+<p> </p>
 <p> </p>
             ]]>
         </content>
@@ -138,7 +202,7 @@
         <link href="https://fr.usini.eu/une-batterie-tr-909-a-base-desp8266/"/>
         <id>https://fr.usini.eu/une-batterie-tr-909-a-base-desp8266/</id>
 
-        <updated>2019-05-31T18:25:41+02:00</updated>
+        <updated>2019-06-03T13:34:09+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/13/tr909.jpg" alt="" />
@@ -188,6 +252,12 @@
 <div class="buttonContainer-KtQ8wc">Détail "amusant" vu que la sortie I2S est sur la broche RX, lors du téléversement du programme, on peut écouter le programme se copier.</div>
 <div class="buttonContainer-KtQ8wc"><audio controls="controls"><source src="/media/files/upload.mp3" type="audio/mp3" /><source src="/media/files/upload.ogg" type="audio/ogg" /></audio>  </div>
 <div class="buttonContainer-KtQ8wc"> </div>
+<span style="text-decoration: underline;">Composants</span><br>
+<ul>
+<li><a href="http://s.click.aliexpress.com/e/wAsXMHw">ESP8266 (Wemos D1 Mini Clone)</a></li>
+<li><a href="http://s.click.aliexpress.com/e/bLEZha2M">Headphones Socket</a></li>
+</ul>
+<p> </p>
 </div>
 </div>
 </div>
@@ -202,17 +272,17 @@
         <link href="https://fr.usini.eu/micro-numerique-pour-esp32/"/>
         <id>https://fr.usini.eu/micro-numerique-pour-esp32/</id>
 
-        <updated>2019-05-31T15:21:51+02:00</updated>
+        <updated>2019-06-03T13:36:16+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/12/micro.jpg" alt="" />
-                    J'avais acheté un micro numérique (en I2S) mais je n'avais pas trouvé&hellip;
+                    J'avais acheté un micro numérique (en I2S) INMP441 mais je n'avais pas&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://fr.usini.eu/media/posts/12/micro.jpg" alt="" />
-                <p>J'avais acheté un micro numérique (en I2S) mais je n'avais pas trouvé le temps de le tester depuis, sauf erreur il faut au moins un esp (je teste sur un esp32) pour qu'il fonctionne.</p>
+                <p>J'avais acheté un <a href="http://s.click.aliexpress.com/e/AvszyfQ">micro numérique (en I2S) INMP441</a> mais je n'avais pas trouvé le temps de le tester depuis, sauf erreur il faut au moins un esp (je teste sur un <a href="http://s.click.aliexpress.com/e/bO134zIo">esp32</a>) pour qu'il fonctionne.</p>
 <p>J'ai galéré à trouver un code pour arduino en voici un qui marche <a title="https://revspace.nl/EspAudioSensor" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://revspace.nl/EspAudioSensor" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://revspace.nl/EspAudioSensor</a> <br><a title="https://github.com/bertrik/NoiseLevel" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/bertrik/NoiseLevel" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/bertrik/NoiseLevel</a></p>
 <p>Cette exemple gère plusieurs bandes de fréquences et est omnidirectionnel (la portée est bien meilleur que les micros analogiques de base).</p>
 <p>Voici le résultat sur le moniteur série</p>
@@ -241,7 +311,7 @@
         <link href="https://fr.usini.eu/camera-a-base-desp32/"/>
         <id>https://fr.usini.eu/camera-a-base-desp32/</id>
 
-        <updated>2019-05-31T16:18:24+02:00</updated>
+        <updated>2019-06-03T13:38:33+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/11/esp32cam.jpg" alt="" />
@@ -251,7 +321,7 @@
         <content type="html">
             <![CDATA[
                     <img src="https://fr.usini.eu/media/posts/11/esp32cam.jpg" alt="" />
-                <p>Intrigué par cette <a href="https://fr.aliexpress.com/item/32981449079.html">caméra à 7€</a> (fdp) compris, et la vidéo de  <a href="https://randomnerdtutorials.com/">Rui Santos (Randomnerdtutorials)</a> j'ai décidé de l'acheter.</p>
+                <p>Intrigué par cette <a href="http://s.click.aliexpress.com/e/bOB0jII4">caméra à 7€</a> (fdp) compris, et la vidéo de  <a href="https://randomnerdtutorials.com/">Rui Santos (Randomnerdtutorials)</a> j'ai décidé de l'acheter.</p>
 <figure class="post__video"><iframe width="560" height="314" src="https://www.youtube.com/embed/36p9To2hfak" allowfullscreen="allowfullscreen" ></iframe></figure>
 <div class="channels-Ie2l6A vertical-V37hAW flex-1O1GKY directionColumn-35P_nr">
 <div class="messageCozy-2JPAPA message-1PNnaP">
@@ -270,7 +340,7 @@
 <div class="markup-2BOw-j">En gros il faut</div>
 <div class="markup-2BOw-j">
 <ul>
-<li class="markup-2BOw-j">un programmeur FTDI</li>
+<li class="markup-2BOw-j"><a href="http://s.click.aliexpress.com/e/bYMbYGp6">un programmeur FTDI</a></li>
 <li class="markup-2BOw-j">le relier le IO0 sur le GND pour le mettre en mode programmation.</li>
 </ul>
 </div>
@@ -299,12 +369,12 @@
 <figure class="post__image post__image" ><img src="https://fr.usini.eu/media/posts/11/ESP32-CAM-video-streaming-example.jpg" alt="" width="750" height="407">
 <figcaption >Randomnerdtutorials.com</figcaption>
 </figure>
-<div class="markup-2BOw-j">Moi mon objectif c'est de faire du timelapse, du coup j'avais besoin de trouver un moyen <strong>d'alimenter</strong> mon esp32cam. <br><br>Je me suis dit que le<strong> programmeur FTDI</strong> pourrait faire l'affaire, <strong>mais il chauffe beaucoup mauvaise idée</strong>. En fouillant chez moi j'ai retrouvé des <a href="https://fr.aliexpress.com/item/32489232521.html" target="_blank" rel="noopener noreferrer">module de charge lipo USB (TP4056)</a>.</div>
+<div class="markup-2BOw-j">Moi mon objectif c'est de faire du timelapse, du coup j'avais besoin de trouver un moyen <strong>d'alimenter</strong> mon esp32cam. <br><br>Je me suis dit que le<strong> programmeur FTDI</strong> pourrait faire l'affaire, <strong>mais il chauffe beaucoup mauvaise idée</strong>. En fouillant chez moi j'ai retrouvé des <a href="http://s.click.aliexpress.com/e/bD0x5eik" target="_blank" rel="noopener noreferrer">module de charge lipo USB (TP4056)</a>.</div>
 <div class="markup-2BOw-j"><img class="post__image--center" src="https://fr.usini.eu/media/posts/11/tp4056.png" alt="" width="243" height="232"></div>
 <div class="markup-2BOw-j">A coté de l'usb il y a un + / - qui délivre du 5v, l'esp32-cam peut prendre du 5v (qui est converti en 3.3v).</div>
 <div class="markup-2BOw-j">Du coup je me suis servi de ça. Evidemment j'ai oublié de <strong>mettre le câble qui était sur le 3.3V sur le 5v</strong>, heureusement<strong> la carte a l'air de pas avoir souffert.</strong></div>
 <div class="markup-2BOw-j"> </div>
-<div class="markup-2BOw-j">Dans l'idéal, il vaudrait mieux utiliser juste un <a href="https://fr.aliexpress.com/item/32999453278.html" target="_blank" rel="noopener noreferrer">module d'alimentation USB</a>.</div>
+<div class="markup-2BOw-j">Dans l'idéal, il vaudrait mieux utiliser juste un <a href="http://s.click.aliexpress.com/e/bFTpMs1K&gt;" target="_blank" rel="noopener noreferrer">module d'alimentation USB</a>.</div>
 <div class="markup-2BOw-j"><img class="post__image--center" src="https://fr.usini.eu/media/posts/11/alimusb.png" width="217" height="193"></div>
 <div class="markup-2BOw-j">Pour récupérer les images et les sauvegarder sur mon google Drive, j'ai sur mon Raspberry Pi qui sert de media center, <a href="https://github.com/ccrisan/motioneye/wiki">motionEye.</a></div>
 <div class="markup-2BOw-j"> </div>
@@ -360,25 +430,6 @@ window.location="https://wikifab.org/wiki/Brancher_des_p%C3%A9riph%C3%A9riques_U
                     <img src="https://fr.usini.eu/media/posts/9/tft_iftt_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Mini_%C3%A9cran_connect%C3%A9"
-// ]]></script>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Afficher une image sur un écran ST7789</title>
-        <author>
-            <name>Rémi Sarrailh</name>
-        </author>
-        <link href="https://fr.usini.eu/afficher-une-image-sur-un-ecran-st7789/"/>
-        <id>https://fr.usini.eu/afficher-une-image-sur-un-ecran-st7789/</id>
-
-        <updated>2019-05-31T13:57:29+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://fr.usini.eu/media/posts/8/stt7789_hack.jpg" alt="" />
-                <script>// <![CDATA[
-window.location="https://wikifab.org/wiki/Afficher_une_image_sur_un_%C3%A9cran_ST7789"
 // ]]></script>
             ]]>
         </content>
