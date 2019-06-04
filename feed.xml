@@ -3,7 +3,7 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-06-04T12:17:02+02:00</updated>
+    <updated>2019-06-04T12:21:59+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://fr.usini.eu/guide-cartes-electroniques/"/>
         <id>https://fr.usini.eu/guide-cartes-electroniques/</id>
 
-        <updated>2019-06-04T12:16:57+02:00</updated>
+        <updated>2019-06-04T12:21:56+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/19/buy_guide.jpg" alt="" />
@@ -38,7 +38,7 @@
 </div>
 <h2 id="mcetoc_1dcgrpeuf0">ESP32</h2>
 <p>Les ESP32 sont des cartes vraiment puissante pour leur prix ! Quasiment aussi facile à programmer qu'un Arduino Uno, elles peuvent communiquer en WiFi et Bluetooth (LE)</p>
-<p class="align-left"><a href="http://s.click.aliexpress.com/e/bcLXgZYU">M5 StickC - 14€</a><br>Cette ESP32 de M5Stack ne coûte vraiment pas cher pour ce qu'il contient. <br>Disponible directement dans un boitier, il contient un écran LCD couleur, un accéléromètre, une batterie, un micro , une led infrarouge, une poigné de GPIO et un port groove pour brancher des composants disponible dans leur boutique.<br><br>Elle a même une entrée USB-C<br><br>Un bon moyen de débuter avec l'ESP32 !<br><a href="http://s.click.aliexpress.com/e/bcLXgZYU"><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/m5stick.jpg" width="220" height="220"></a></p>
+<p><a href="http://s.click.aliexpress.com/e/bcLXgZYU">M5 StickC - 14€</a><br>Cette ESP32 de M5Stack ne coûte vraiment pas cher pour ce qu'il contient. <br>Disponible directement dans un boitier, il contient un écran LCD couleur, un accéléromètre, une batterie, un micro , une led infrarouge, une poigné de GPIO et un port groove pour brancher des composants disponible dans leur boutique.<br><br>Elle a même une entrée USB-C<br><br>Un bon moyen de débuter avec l'ESP32 !<br><a href="http://s.click.aliexpress.com/e/bcLXgZYU"><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/m5stick.jpg" width="220" height="220"></a></p>
 <p><a href="http://s.click.aliexpress.com/e/bgaGG2d6">Lolin32 (clone Wemos) - 5€</a><br>Wemos ne les vends plus mais cette esp32 reste une référence.<br>Si vous voulez facilement faire des projets qui fonctionne sur batterie, sans vous prendre la tête c'est un très bon choix, en effet il ne consomme que 100uA en mode veille.</p>
 <p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/lolin32.jpg" width="220" height="220"></p>
 <p><a href="http://s.click.aliexpress.com/e/bqRQMkWc">TTGO ESP32 - 7€<br></a>Voici un autre ESP32 bien sympa, il consomme légerement plus de courant en veille (200ua) mais il est plus petit.</p>
