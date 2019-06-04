@@ -3,12 +3,63 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-06-03T13:52:41+02:00</updated>
+    <updated>2019-06-04T12:17:02+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
     <id>https://fr.usini.eu</id>
 
+    <entry>
+        <title>Guide cartes électroniques</title>
+        <author>
+            <name>Rémi Sarrailh</name>
+        </author>
+        <link href="https://fr.usini.eu/guide-cartes-electroniques/"/>
+        <id>https://fr.usini.eu/guide-cartes-electroniques/</id>
+
+        <updated>2019-06-04T12:16:57+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://fr.usini.eu/media/posts/19/buy_guide.jpg" alt="" />
+                    Voici mes recommandations de cartes électroniques qui peuvent être programmés avec le&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://fr.usini.eu/media/posts/19/buy_guide.jpg" alt="" />
+                <p>Voici mes recommandations de cartes électroniques qui peuvent être programmés avec<br>le logiciel Arduino.</p>
+<div class="post__toc">
+<h3>Sommaire</h3>
+<ul>
+<li><a href="#mcetoc_1dcgrpeuf0">ESP32</a></li>
+<li><a href="#mcetoc_1dcgs6cu73">ESP8266</a></li>
+<li><a href="#mcetoc_1dcgspv574">Arduino (clone)</a></li>
+</ul>
+</div>
+<h2 id="mcetoc_1dcgrpeuf0">ESP32</h2>
+<p>Les ESP32 sont des cartes vraiment puissante pour leur prix ! Quasiment aussi facile à programmer qu'un Arduino Uno, elles peuvent communiquer en WiFi et Bluetooth (LE)</p>
+<p class="align-left"><a href="http://s.click.aliexpress.com/e/bcLXgZYU">M5 StickC - 14€</a><br>Cette ESP32 de M5Stack ne coûte vraiment pas cher pour ce qu'il contient. <br>Disponible directement dans un boitier, il contient un écran LCD couleur, un accéléromètre, une batterie, un micro , une led infrarouge, une poigné de GPIO et un port groove pour brancher des composants disponible dans leur boutique.<br><br>Elle a même une entrée USB-C<br><br>Un bon moyen de débuter avec l'ESP32 !<br><a href="http://s.click.aliexpress.com/e/bcLXgZYU"><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/m5stick.jpg" width="220" height="220"></a></p>
+<p><a href="http://s.click.aliexpress.com/e/bgaGG2d6">Lolin32 (clone Wemos) - 5€</a><br>Wemos ne les vends plus mais cette esp32 reste une référence.<br>Si vous voulez facilement faire des projets qui fonctionne sur batterie, sans vous prendre la tête c'est un très bon choix, en effet il ne consomme que 100uA en mode veille.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/lolin32.jpg" width="220" height="220"></p>
+<p><a href="http://s.click.aliexpress.com/e/bqRQMkWc">TTGO ESP32 - 7€<br></a>Voici un autre ESP32 bien sympa, il consomme légerement plus de courant en veille (200ua) mais il est plus petit.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/ttgoesp32.jpg" width="220" height="220"></p>
+<h2 id="mcetoc_1dcgs6cu73">ESP8266</h2>
+<p>Les ESP32 sont trop cher pour vous ? Les anciennes versions sont loin d'être obsolète, même si elles sont moins puissantes (mais beaucoup plus qu'un Arduino Uno), n'ont pas le bluetooth et beaucoup moins de broches.<br><br><a href="http://s.click.aliexpress.com/e/zbBvwli">D1 Mini (clone Wemos) - 3€</a><br>Difficile de faire moins cher et pourtant cette esp8266 est bien pratique.<br>Il est facile de trouver des shields avec pléthore d'accessoires (batterie/capteurs etc...) pour facilement ajouter des fonctionnalités.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/wemosD1mini.jpg" width="220" height="220"><a href="http://s.click.aliexpress.com/e/c0gyjXaC">D1 Mini Pro (clone Wemos) - 4€<br></a>Besoin de plus de portée ? Cette version permet d'ajouter une antenne</p>
+<h2 id="mcetoc_1dcgspv574"><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/wemos-D1-mini-pro.jpg" width="220" height="220"></h2>
+<p><a href="http://s.click.aliexpress.com/e/cDPtWtCG">DM Strong Series ESP8266 - 4€<br></a>Cette version a un format super pratique, chaque broche est accompagné d'une broche VCC/GND et le format carrée est pratique pour le mettre en boite.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/dmstrong_esp8266.jpg" width="220" height="220"></p>
+<h2 id="mcetoc_1dcguclu10">Arduino (clone)</h2>
+<p>La plupart des clones de cartes Arduino n'ont plus trop d'intêret aujourd'hui, vous pouvez avoir quasiment la même chose au même prix avec un ESP avec en plus le Wifi (qui peut être déactivé) et plus de puissance de calcul.<br>Pour autant il reste une fonctionnalité que l'esp (<a href="https://projetsdiy.fr/espressif-annonce-le-lancement-du-nouveau-esp32-s2-43-e-s-interface-camera-ecran-lcd-securite-renforcee/">pour le moment</a>) n'a pas.<br><br>Un autre avantage tout de même, le téléversement est plus rapide sur ces cartes.</p>
+<p><a href="http://s.click.aliexpress.com/e/cCNYZzIY">Pro Micro 5v (Clone Arduino)</a><br>Ce clone permet de transformer votre Arduino en n'importe quel périphérique USB (Clavier / Souris / Clavier Midi / <a href="#INTERNAL_LINK#/post/14">Manette</a>)</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/micro5vpro.jpg" width="220" height="220"></p>
+<p><a href="http://s.click.aliexpress.com/e/nAviGCC">DM Strong Series Micro USB Pro 8€<br></a>Cette version a un format super pratique, chaque broche est accompagné d'une broche VCC/GND et le format carrée est pratique pour le mettre en boite.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/dmstrong_minipro.jpg" width="220" height="220"></p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Envoyer un Calendrier sur discord avec node-red</title>
         <author>
@@ -411,25 +462,6 @@
                     <img src="https://fr.usini.eu/media/posts/10/USBHOSTMINI_hack.jpg" alt="" />
                 <script>// <![CDATA[
 window.location="https://wikifab.org/wiki/Brancher_des_p%C3%A9riph%C3%A9riques_USB_sur_un_ESP8266"
-// ]]></script>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Mini écran connecté</title>
-        <author>
-            <name>Rémi Sarrailh</name>
-        </author>
-        <link href="https://fr.usini.eu/mini-ecran-connecte/"/>
-        <id>https://fr.usini.eu/mini-ecran-connecte/</id>
-
-        <updated>2019-05-31T18:26:13+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://fr.usini.eu/media/posts/9/tft_iftt_hack.jpg" alt="" />
-                <script>// <![CDATA[
-window.location="https://wikifab.org/wiki/Mini_%C3%A9cran_connect%C3%A9"
 // ]]></script>
             ]]>
         </content>
