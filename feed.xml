@@ -3,7 +3,7 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-06-04T12:30:23+02:00</updated>
+    <updated>2019-06-09T14:32:10+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://fr.usini.eu/guide-cartes-electroniques/"/>
         <id>https://fr.usini.eu/guide-cartes-electroniques/</id>
 
-        <updated>2019-06-04T12:30:17+02:00</updated>
+        <updated>2019-06-09T13:40:08+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/19/buy_guide.jpg" alt="" />
@@ -44,8 +44,8 @@
 <p><a href="http://s.click.aliexpress.com/e/bqRQMkWc">TTGO ESP32 - 7€<br></a>Voici un autre ESP32 bien sympa, elle consomme légerement plus de courant en veille (<a href="https://docs.google.com/spreadsheets/d/1Mu-bNwpnkiNUiM7f2dx8-gPnIAFMibsC2hMlWhIHbPQ/edit">200ua</a>) mais elle est plus petit.</p>
 <p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/ttgoesp32.jpg" width="220" height="220"></p>
 <h2 id="mcetoc_1dcgs6cu73">ESP8266</h2>
-<p>Les ESP32 sont trop cher pour vous ? Les anciennes versions sont loin d'être obsolète, même si elles sont moins puissantes (mais beaucoup plus qu'un Arduino Uno), n'ont pas le bluetooth et beaucoup moins de broches.<br><br><a href="http://s.click.aliexpress.com/e/zbBvwli">D1 Mini (clone Wemos) - 3€</a><br>Difficile de faire moins cher et pourtant cette esp8266 est bien pratique.<br>Il est facile de trouver des shields avec pléthore d'accessoires (batterie/capteurs etc...) pour facilement ajouter des fonctionnalités.</p>
-<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/wemosD1mini.jpg" width="220" height="220"><a href="http://s.click.aliexpress.com/e/c0gyjXaC">D1 Mini Pro (clone Wemos) - 4€<br></a>Besoin de plus de portée ? Cette version permet d'ajouter une antenne</p>
+<p>Les ESP32 sont trop cher pour vous ? Les anciennes versions sont loin d'être obsolète, même si elles sont moins puissantes (mais beaucoup plus qu'un Arduino Uno), n'ont pas le bluetooth et beaucoup moins de broches.<br><br>Pour autant, elles ont aussi pleins de programmes tout fait de disponibles comme <a href="https://www.letscontrolit.com/wiki/index.php/ESPEasy">ESPEasy</a> , <a href="#INTERNAL_LINK#/post/7">ESP8266_ArtNetNode</a> etc... pas forcément disponible sur l'ESP32.<br><br><a href="http://s.click.aliexpress.com/e/zbBvwli">D1 Mini (clone Wemos) - 3€</a><br>Difficile de faire moins cher et pourtant cette esp8266 est bien pratique.<br>Il est facile de trouver des shields avec pléthore d'accessoires (batterie/capteurs etc...) pour facilement ajouter des fonctionnalités.</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/wemosD1mini.jpg" width="220" height="220"><a href="http://s.click.aliexpress.com/e/c0gyjXaC">D1 Mini Pro (clone Wemos) - 4€<br></a>Besoin de plus de portée ? Cette version permet d'ajouter une antenne et à 16m au lieu de 4m de mémoire!</p>
 <h2 id="mcetoc_1dcgspv574"><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/wemos-D1-mini-pro.jpg" width="220" height="220"></h2>
 <p><a href="http://s.click.aliexpress.com/e/cDPtWtCG">DM Strong Series ESP8266 - 4€<br></a>Cette version a un format super pratique, chaque broche est accompagné d'une broche VCC/GND et le format carrée est pratique pour le mettre en boite.</p>
 <p><img class="post__image--center" src="https://fr.usini.eu/media/posts/19/dmstrong_esp8266.jpg" width="220" height="220"></p>
@@ -224,23 +224,52 @@
         <link href="https://fr.usini.eu/creer-une-manette-xbox360-a-base-darduino/"/>
         <id>https://fr.usini.eu/creer-une-manette-xbox360-a-base-darduino/</id>
 
-        <updated>2019-06-03T13:28:50+02:00</updated>
+        <updated>2019-06-09T14:06:25+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://fr.usini.eu/media/posts/14/xbox360.jpg" alt="" />
-                    Je pensais qu'on pouvait pas émuler une manette de XBOX360 mais apparemment&hellip;
+                    Saviez vous que l'on peut émuler une manette de XBOX360 à l'aide&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://fr.usini.eu/media/posts/14/xbox360.jpg" alt="" />
-                <p>Je pensais qu'on pouvait pas émuler une manette de XBOX360 mais apparemment si.</p>
-<p><a title="https://www.partsnotincluded.com/programming/arduino-xinput-library/" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://www.partsnotincluded.com/programming/arduino-xinput-library/" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://www.partsnotincluded.com/programming/arduino-xinput-library/</a> <a title="https://github.com/dmadison/ArduinoXInput" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/dmadison/ArduinoXInput" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/dmadison/ArduinoXInput</a></p>
-<p>La plupart du temps, les bibliothèques Arduino émule des <strong>manettes DirectInput</strong>, le problème c'est que <strong>Microsoft a tout fait pour que pratiquement plus aucun jeux</strong> ne les gèrent (afin de vendre des manettes de xbox360 sur le pc). </p>
+                <p>Saviez vous que l'on peut émuler une manette de XBOX360 à l'aide d'un arduino micro ?</p>
+<p class="align-center"> <a href="http://s.click.aliexpress.com/e/cCNYZzIY">Pro Micro 5v (Clone Arduino)</a><br><img class="post__image--center align-center" src="file://C:/Users/remi/Documents/Publii/sites/usini/input/media/posts/19/micro5vpro.jpg" width="220" height="220"></p>
+<div class="post__toc">
+<h3>Sommaire</h3>
 <ul>
-<li><a href="http://s.click.aliexpress.com/e/bkaPi1J2">Arduino Micro 5v (clone)</a></li>
+<li><a href="#mcetoc_1dctvucf73">Installer la bibliothèque</a></li>
+<li><a href="#mcetoc_1dcu02g815">Installer les cartes</a></li>
+<li><a href="#mcetoc_1dctvqqt61">Mon arduino micro n'est plus reconnu !</a></li>
+<li><a href="#mcetoc_1dcu0epkg0">Erreur bizarre pendant la compilation</a></li>
 </ul>
-<p> </p>
+</div>
+<p class="msg msg--highlight ">ATTENTION ! Quand vous téléversez un code ! Il faut reset la carte soi-même s'il vous ne le faîtes pas, cela peut bloquer la carte !</p>
+<p>Fin 2018, David Madison (partsnotincluded.com) a trouvé un moyen de transformer , par ex, un arduino micro / un makey makey ou un teensy... en manette de XBOX !<br><a title="https://www.partsnotincluded.com/programming/arduino-xinput-library/" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://www.partsnotincluded.com/programming/arduino-xinput-library/" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://www.partsnotincluded.com/programming/arduino-xinput-library/</a> <a title="https://github.com/dmadison/ArduinoXInput" class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" href="https://github.com/dmadison/ArduinoXInput" rel="noopener noreferrer" target="_blank" role="button" tabindex="0">https://github.com/dmadison/ArduinoXInput</a></p>
+<p>La plupart du temps, les bibliothèques Arduino émule des <strong>manettes DirectInput</strong>, le problème c'est que <strong>Microsoft a tout fait pour que pratiquement plus aucun jeux</strong> ne les gèrent (afin de vendre des manettes de xbox360 sur le pc).<br><br>Alors certes on peut gruger en utilisant <a href="http://www.x360ce.com/">xbox360ce</a> mais cela demande de l'installer et ça ne marche pas avec tout les jeux !</p>
+<p class="msg msg--highlight ">Cette bibliothèque ne peut pas être utilisé commercialement car elle imite une manette de XBOX360 et apparement c'est illégal de la vendre avec un firmware qui fait ça (libre à vous de vendre une manette fabriqué par vous même et de subtilement expliquer comment la flasher après :-) )</p>
+<h2 id="mcetoc_1dctvucf73">Installer la bibliothèque</h2>
+<p id="mcetoc_1dctvugqg4">Si vous voulez utiliser ArduinoXInput il faut l'installer depuis le <strong>gestionnaire de bibliothèques</strong></p>
+<p><img class="post__image" src="https://fr.usini.eu/media/posts/14/xinput_library.png" alt="" width="785" height="445"></p>
+<h2 id="mcetoc_1dcu02g815">Installer les cartes</h2>
+<p>Il faut aussi installer des cartes, pour ça :</p>
+<ul>
+<li>Il faut télécharger les cartes qui correspondent à la votre (Dans <strong>release</strong> pas directement le code)</li>
+<li>Le copier dans le dossier des croquis, <strong>dans un dossier que vous aurez crée vous mêmes : hardware</strong> (<strong>Documents/Arduino/hardware</strong>)</li>
+</ul>
+<p><a href="https://www.github.com/dmadison/ArduinoXInput_AVR">Cartes Arduino (Leonardo / Micro / Yun ...)<br></a><a href="https://www.github.com/dmadison/ArduinoXInput_SparkFun">Cartes Sparkfun (Pro Micro / Fio / Qduino Mini / LilyPad USB Plus)<br></a><a href="https://www.github.com/dmadison/ArduinoXInput_Teensy">Cartes Teensy</a></p>
+<p>Normalement vous devriez avoir de nouvelles cartes de disponibles !<img class="post__image" src="https://fr.usini.eu/media/posts/14/xinput_com.png" alt="" width="245" height="22"></p>
+<p>Ne reste plus <strong>qu'à fouiller les examples</strong> pour découvrir comment l'utiliser !</p>
+<h2 id="mcetoc_1dctvqqt61">Mon arduino micro n'est plus reconnu !</h2>
+<p>N'oubliez pas de reset votre carte après chaque téléversement, sinon elle pourrait devenir improgrammable !</p>
+<p>Je n'ai testé cette procédure qu'avec un Arduino Micro 3.3v donc je ne garantis pas que ça marchera mais voici un moyen de débriquer la carte.</p>
+<p><a href="https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/all#troubleshooting-and-faq">https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/all#troubleshooting-and-faq</a></p>
+<p>Sinon il vous faudra un programmeur externe ICSP.</p>
+<h2 id="mcetoc_1dcu0epkg0">Erreur bizarre pendant la compilation</h2>
+<p>Je me suis retrouvé avec une erreur à la compilation.</p>
+<p><code>cc1.exe: error: -fno-fat-lto-objects are supported only with linker plugin.</code></p>
+<p>Je n'ai trouver aucune info sur comment régler cette erreur, mais en réinstallant le logiciel Arduino complètement, elle a disparu.</p>
 <p> </p>
             ]]>
         </content>
