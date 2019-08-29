@@ -1,0 +1,586 @@
+<!doctype html><html amp lang="fr"><head><meta charset="utf-8"><title>Faire ses propres PCB - Usini</title><meta name="description" content="J'ai longtemps évité de faire mes propres cartes électroniques, car j'imaginais que c'était&hellip;"><link rel="canonical" href="https://fr.usini.eu/faire-ses-propres-pcb/"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://fr.usini.eu/amp/faire-ses-propres-pcb/"},"headline":"Faire ses propres PCB","datePublished":"2019-08-29T15:17","dateModified":"2019-08-29T15:17","image":{"@type":"ImageObject","url":"https://fr.usini.eu/media/posts/20/pcb2.png","height":641,"width":1061},"description":"J'ai longtemps évité de faire mes propres cartes électroniques, car j'imaginais que c'était&hellip;","author":{"@type":"Person","name":"Rémi Sarrailh"},"publisher":{"@type":"Organization","name":"Rémi Sarrailh","logo":{"@type":"ImageObject","url":"https://fr.usini.eu/media/website/logo_final.png","height":103,"width":200}}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #039be5;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #039be5; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #039be5;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #039be5;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+                    background-image: url('https://fr.usini.eu/media/website/logo_final.png');
+                    background-size: auto 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #039be5;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #039be5;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #039be5; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #039be5;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo" href="https://fr.usini.eu/amp/">Usini</a></div></nav><main class="wrap-page"><article class="post"><figure class="post-featured-image"><amp-img src="https://fr.usini.eu/media/posts/20/pcb2.png" alt="" srcset="https://fr.usini.eu/media/posts/20/responsive/pcb2-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/pcb2-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/pcb2-md.png 768w" sizes="(max-width: 768px) 100vw, 768px" height="641" layout="responsive" width="1061"></amp-img></figure><div class="wrap-inner"><header class="post-header"><h1>Faire ses propres PCB</h1><p class="post-meta">Écrit par <a href="https://fr.usini.eu/amp/auteurs/remi-sarrailh/" rel="nofollow" title="Rémi Sarrailh">Rémi Sarrailh</a> <time datetime="2019-08-29T15:17">29 août 2019</time></p></header><p>J'ai longtemps évité de faire mes propres cartes électroniques, car j'imaginais que c'était :</p><ul><li>compliqué</li><li>par peur que mes tutoriels ne soit plus accessibles aux personnes qui n'aurait pas les compétences pour faire fabriquer leurs PCB.</li></ul><p>Mais voir les cartes que font des gens que je suis sur Twitter, comme Brian Lough <a href="https://twitter.com/witnessmenow/">https://twitter.com/witnessmenow/</a> ou le Dr Cadic Phillipe <a href="https://twitter.com/pwavrobot">https://twitter.com/pwavrobot</a> m'a vraiment donné envie de m'y mettre.</p><div class="gallery" data-is-empty="false" data-columns="2"><figure class="gallery__item"><a href="https://fr.usini.eu/media/posts/20/gallery/EDAoHMGXoAEkc7k.jpg" data-size="2048x996"><amp-img src="https://fr.usini.eu/media/posts/20/gallery/EDAoHMGXoAEkc7k-thumbnail.jpg" alt="" width="768" height="374" layout="responsive"></amp-img></a><figcaption class="gallery-description">Carte de visite LoRa</figcaption></figure><figure class="gallery__item"><a href="https://fr.usini.eu/media/posts/20/gallery/EDFTuYGW4AESND-.jpg" data-size="1280x959"><amp-img src="https://fr.usini.eu/media/posts/20/gallery/EDFTuYGW4AESND--thumbnail.jpg" alt="" width="768" height="575" layout="responsive"></amp-img></a><figcaption class="gallery-description">Contrôleur de matrix de LED</figcaption></figure></div><p>J'ai testé de nombreuse façon de me passer d'un PCB, utiliser des câbles Dupont, des câbles très fins avec / sans des stripboards et en plus d'être <strong>long à faire</strong>, <strong>fatiguant mentalement</strong>, à chaque fois c'est un cauchemar niveau<strong> faux contact.</strong></p><p>En fin de compte, une fois la carte crée, c'est simple de la répliquer !</p><p>Il existe plein de bons guides pour apprendre à faire des PCB sur <a href="http://kicad-pcb.org/">kicad</a>, mais très peu pour juste avoir une idée générale de ce qu'il faut faire, du coup je me suis dit que ça pourrait être intéressant de vous l'expliquer.</p><p>Gardez bien à l'esprit, que je suis en train d'apprendre, donc je peux très bien dire des bêtises, surtout que je prends comme exemple une carte que je n'ai pas encore testée :-)</p><h2>Comment faire fabriquer un PCB ?</h2><p> </p><p>Personnellement, je passe par <a href="https://jlcpcb.com/">JLPCB</a>, pour 5 PCB, ça me coûte 6,11€ (fdp compris).<br>Pas besoin de créer un compte, car on peut utiliser un compte Google, et pour payer, il accepte PayPal.</p><p>Il suffit de téléverserun fichier zip avec le gerber.</p><figure class="post__image"><amp-img src="https://fr.usini.eu/media/posts/20/jlpcb.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/jlpcb-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/jlpcb-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/jlpcb-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/jlpcb-lg.png 1024w" alt="" width="897" height="305" layout="responsive"></amp-img></figure><p>Pas besoin de comprendre, comment ça marche, vous pouvez laisser les options par défaut, la plupart du temps.</p><p>Après il ne faut pas être pressé, ça peut prendre 2 semaines à arriver !</p><h2>Création d'un PCB</h2><p>Pour faire un PCB, il y a trois étapes : Faire un schéma / Créer le PCB / Exporter le gerber.<br>Je ne vais pas trop rentrer dans les détails pour ne pas trop vous perdre et dire n'importe quoi :-)</p><h3><span>Schéma</span></h3><p>Premier étape, faire un schéma, en soit ce n'est pas obligatoire,mais c'est ici que l'on va définir où est branché chaque élément et ça va nous éviter de faire des erreurs après !</p><p>Si un élément n'est pas disponible, vous pouvez simplement mettre des connecteurs (si ça rentre dans une breadboard, c'est des connecteurs PinHeader 2.54mm)<br>Vous pouvez aussi créer vos propres éléments (ce n'est pas si compliqué) ou chercher sur internet si quelqu'un l'a déjà fait.</p><p>D'ailleurs pourquoi 2,54mm c'est un peu bizarre non ? hé bien dans l'électronique tout est basé sur le système impérial et 2,54mm et exactement un pouce (inch).</p><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/lightbar_sch.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/lightbar_sch-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/lightbar_sch-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/lightbar_sch-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/lightbar_sch-lg.png 1024w" width="475" height="445" layout="responsive"></amp-img></figure><h3><span>Attribution des élements</span></h3><p>Une fois que c'est fini, il nous faut pour chaque élement du schéma, lui attribuer un élement pour le PCB. Heureusement, il y a une visualisation 3D pour être sûr de ne pas se tromper !</p><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/pcb.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/pcb-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/pcb-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/pcb-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/pcb-lg.png 1024w" alt="" width="818" height="524" layout="responsive"></amp-img></figure><h3>Routage des câbles</h3><p>Et nous voilà dans la vue PCB, on place les élements, route les pistes (pas de panique grâce au schéma, on est guidé).<br>On peut mettre les pistes sur les deux faces, ceux en rouge sont sur la face avant (F.Cu) et ceux en vert sur la face arrière (B.Cu).<br>On peut aussi faire passer les câbles d'une face à une autre grâce à des vias.</p><h3><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/pcb2.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/pcb2-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/pcb2-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/pcb2-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/pcb2-lg.png 1024w" alt="" width="1061" height="641" layout="responsive"></amp-img></figure><br>Zone sur le cuivre</h3><p>Si vous regardez un PCB, il y a des zones légèrement plus claires, il s'agit d'une zone de cuivre (souvent une zone de GND)<br>J'ai eu beaucoup de mal à comprendre à quoi ça servait au début, pourtant c'est simple : tout ce qu'il y a dans la zone de cuivre sera relié sans avoir à créer une piste.</p><p>Vu que dans un PCB, beaucoup de composants ont besoin du GND (la terre) ça permet d'éviter de se prendre la tête à les relier ! (Je passe sur l'utilité principale qui est un peu technique)</p><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/gnd.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/gnd-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/gnd-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/gnd-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/gnd-lg.png 1024w" alt="" width="1117" height="653" layout="responsive"></amp-img></figure><h3>Découpage de la carte</h3><p>Kicad est capable de deviner le découpage de la carte (Edge.Cuts) mais c'est mieux de le faire soi-même, ici elle est très carrée, mais on peut faire des courbes.</p><h3><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/pcb3.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/pcb3-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/pcb3-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/pcb3-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/pcb3-lg.png 1024w" alt="" width="1129" height="653" layout="responsive"></amp-img></figure></h3><h3>Sérigraphie</h3><p>On peut écrire sur un PCB, ça permet de sacrement se simplifier la vie quand on aura un doute sur où est branché un composant ! (F.SilkS / B.SilkS)</p><h3><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/seri.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/seri-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/seri-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/seri-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/seri-lg.png 1024w" alt="" width="1073" height="649" layout="responsive"></amp-img></figure><br>Vérification du PCB</h3><p>Il peut être tentant de finir là, un petit clic sur la coccinelle, pour vérifier les connexions et hop on envoie, mais je vous conseille d'imprimer sur du papier votre PCB pour voir si les composants s'emboîtent bien!</p><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/bug.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/bug-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/bug-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/bug-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/bug-lg.png 1024w" alt="" width="31" height="33" layout="responsive"></amp-img></figure><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/pcb_test.jpg" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/pcb_test-xs.jpg 300w ,https://fr.usini.eu/media/posts/20/responsive/pcb_test-sm.jpg 480w ,https://fr.usini.eu/media/posts/20/responsive/pcb_test-md.jpg 768w ,https://fr.usini.eu/media/posts/20/responsive/pcb_test-lg.jpg 1024w" alt="" width="1197" height="466" layout="responsive"></amp-img></figure>Pensez à retirer les zones de cuivres avant d'imprimer afin de ne pas gaspiller de l'encre !<p></p><h3>Traçage du PCB</h3><p>Il ne reste plus qu'à tracer le PCB (en n'oubliant par de créer les fichiers de perçages !), mettre tout ça dans un fichier ZIP et l'envoyer !</p><figure class="post__image--center"><amp-img src="https://fr.usini.eu/media/posts/20/trace.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://fr.usini.eu/media/posts/20/responsive/trace-xs.png 300w ,https://fr.usini.eu/media/posts/20/responsive/trace-sm.png 480w ,https://fr.usini.eu/media/posts/20/responsive/trace-md.png 768w ,https://fr.usini.eu/media/posts/20/responsive/trace-lg.png 1024w" alt="" width="817" height="657" layout="responsive"></amp-img></figure><p>Voilà pour ce rapide tour de la création de PCB, en espérant que ça vous donnera envie de vous y mettre !</p><aside><ul class="post-tag"><li><a href="https://fr.usini.eu/amp/web/jlpcb/">jlpcb</a></li><li><a href="https://fr.usini.eu/amp/web/kicad/">kicad</a></li><li><a href="https://fr.usini.eu/amp/web/pcb/">pcb</a></li></ul><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="Faire ses propres PCB"></amp-social-share><amp-social-share type="facebook" width="40" height="40" data-param-app_id="" data-param-text="Faire ses propres PCB" data-param-href="https://fr.usini.eu/amp/faire-ses-propres-pcb/"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="Faire ses propres PCB" data-param-url="https://fr.usini.eu/amp/faire-ses-propres-pcb/"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://fr.usini.eu/amp/faire-ses-propres-pcb/"></amp-social-share><amp-social-share type="tumblr" width="40" height="40" data-param-text="Faire ses propres PCB" data-param-url="https://fr.usini.eu/amp/faire-ses-propres-pcb/"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="Faire ses propres PCB"></amp-social-share></div></aside></div></article><nav class="post-pagination wrap-inner"><div class="post-pagination-prev"><span>Article précédent</span> <a href="https://fr.usini.eu/amp/guide-cartes-electroniques/">Guide cartes électroniques</a></div></nav></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">Powered by Publii</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://twitter.com/m4dnerd">🐤 Twitter</a></li><li><a href="https://www.youtube.com/user/maditnerd">📼 Youtube</a></li><li><a href="https://wikifab.org/wiki/Group:LABSud">📗 Wikifab</a></li><li><a href="https://soundcloud.com/remisarrailh">🎵 Soundcloud</a></li><li><a href="https://fr.usini.eu/amp/web/guide/">🛒Guides d&#x27;achat</a></li></ul></amp-sidebar></body></html>

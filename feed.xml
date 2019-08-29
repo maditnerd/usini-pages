@@ -3,12 +3,86 @@
     <title>Usini</title>
     <link href="https://fr.usini.eu/feed.xml" rel="self" />
     <link href="https://fr.usini.eu" />
-    <updated>2019-06-09T14:38:30+02:00</updated>
+    <updated>2019-08-29T15:18:05+02:00</updated>
     <author>
         <name>Rémi Sarrailh</name>
     </author>
     <id>https://fr.usini.eu</id>
 
+    <entry>
+        <title>Faire ses propres PCB</title>
+        <author>
+            <name>Rémi Sarrailh</name>
+        </author>
+        <link href="https://fr.usini.eu/faire-ses-propres-pcb/"/>
+        <id>https://fr.usini.eu/faire-ses-propres-pcb/</id>
+
+        <updated>2019-08-29T15:17:56+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://fr.usini.eu/media/posts/20/pcb2.png" alt="" />
+                    J'ai longtemps évité de faire mes propres cartes électroniques, car j'imaginais que c'était&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://fr.usini.eu/media/posts/20/pcb2.png" alt="" />
+                <p>J'ai longtemps évité de faire mes propres cartes électroniques, car j'imaginais que c'était :</p>
+<ul>
+<li>compliqué</li>
+<li>par peur que mes tutoriels ne soit plus accessibles aux personnes qui n'aurait pas les compétences pour faire fabriquer leurs PCB.</li>
+</ul>
+<p>Mais voir les cartes que font des gens que je suis sur Twitter, comme Brian Lough <a href="https://twitter.com/witnessmenow/">https://twitter.com/witnessmenow/</a> ou le Dr Cadic Phillipe <a href="https://twitter.com/pwavrobot">https://twitter.com/pwavrobot</a> m'a vraiment donné envie de m'y mettre.</p>
+<div class="gallery"   >
+<figure class="gallery__item"><a href="https://fr.usini.eu/media/posts/20/gallery/EDAoHMGXoAEkc7k.jpg" ><img src="https://fr.usini.eu/media/posts/20/gallery/EDAoHMGXoAEkc7k-thumbnail.jpg" alt="" width="768" height="374"></a>
+<figcaption class="gallery-description">Carte de visite LoRa</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://fr.usini.eu/media/posts/20/gallery/EDFTuYGW4AESND-.jpg" ><img src="https://fr.usini.eu/media/posts/20/gallery/EDFTuYGW4AESND--thumbnail.jpg" alt="" width="768" height="575"></a>
+<figcaption class="gallery-description">Contrôleur de matrix de LED</figcaption>
+</figure>
+</div>
+<p>J'ai testé de nombreuse façon de me passer d'un PCB, utiliser des câbles Dupont, des câbles très fins avec / sans des stripboards et en plus d'être <strong>long à faire</strong>, <strong>fatiguant mentalement</strong>, à chaque fois c'est un cauchemar niveau<strong> faux contact.</strong></p>
+<p>En fin de compte, une fois la carte crée, c'est simple de la répliquer !</p>
+<p>Il existe plein de bons guides pour apprendre à faire des PCB sur <a href="http://kicad-pcb.org/">kicad</a>, mais très peu pour juste avoir une idée générale de ce qu'il faut faire, du coup je me suis dit que ça pourrait être intéressant de vous l'expliquer.</p>
+<p>Gardez bien à l'esprit, que je suis en train d'apprendre, donc je peux très bien dire des bêtises, surtout que je prends comme exemple une carte que je n'ai pas encore testée :-)</p>
+<h2 id="mcetoc_1djekb7ea0">Comment faire fabriquer un PCB ?</h2>
+<p> </p>
+<p>Personnellement, je passe par <a href="https://jlcpcb.com/">JLPCB</a>, pour 5 PCB, ça me coûte 6,11€ (fdp compris).<br>Pas besoin de créer un compte, car on peut utiliser un compte Google, et pour payer, il accepte PayPal.</p>
+<p>Il suffit de téléverserun fichier zip avec le gerber.</p>
+<p><img class="post__image" src="https://fr.usini.eu/media/posts/20/jlpcb.png" alt="" width="897" height="305"></p>
+<p>Pas besoin de comprendre, comment ça marche, vous pouvez laisser les options par défaut, la plupart du temps.</p>
+<p>Après il ne faut pas être pressé, ça peut prendre 2 semaines à arriver !</p>
+<h2 id="mcetoc_1djektucq1">Création d'un PCB</h2>
+<p>Pour faire un PCB, il y a trois étapes : Faire un schéma / Créer le PCB / Exporter le gerber.<br>Je ne vais pas trop rentrer dans les détails pour ne pas trop vous perdre et dire n'importe quoi :-)</p>
+<h3 id="mcetoc_1djelu13h5"><span style="text-decoration: underline;">Schéma</span></h3>
+<p>Premier étape, faire un schéma, en soit ce n'est pas obligatoire,mais c'est ici que l'on va définir où est branché chaque élément et ça va nous éviter de faire des erreurs après !</p>
+<p>Si un élément n'est pas disponible, vous pouvez simplement mettre des connecteurs (si ça rentre dans une breadboard, c'est des connecteurs PinHeader 2.54mm)<br>Vous pouvez aussi créer vos propres éléments (ce n'est pas si compliqué) ou chercher sur internet si quelqu'un l'a déjà fait.</p>
+<p>D'ailleurs pourquoi 2,54mm c'est un peu bizarre non ? hé bien dans l'électronique tout est basé sur le système impérial et 2,54mm et exactement un pouce (inch).</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/lightbar_sch.png" width="475" height="445"></p>
+<h3 id="mcetoc_1djeltt3g4"><span style="text-decoration: underline;">Attribution des élements</span></h3>
+<p>Une fois que c'est fini, il nous faut pour chaque élement du schéma, lui attribuer un élement pour le PCB. Heureusement, il y a une visualisation 3D pour être sûr de ne pas se tromper !</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/pcb.png" alt="" width="818" height="524"></p>
+<h3 id="mcetoc_1djem043t6">Routage des câbles</h3>
+<p>Et nous voilà dans la vue PCB, on place les élements, route les pistes (pas de panique grâce au schéma, on est guidé).<br>On peut mettre les pistes sur les deux faces, ceux en rouge sont sur la face avant (F.Cu) et ceux en vert sur la face arrière (B.Cu).<br>On peut aussi faire passer les câbles d'une face à une autre grâce à des vias.</p>
+<h3 id="mcetoc_1djemd72v9"><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/pcb2.png" alt="" width="1061" height="641"><br>Zone sur le cuivre</h3>
+<p>Si vous regardez un PCB, il y a des zones légèrement plus claires, il s'agit d'une zone de cuivre (souvent une zone de GND)<br>J'ai eu beaucoup de mal à comprendre à quoi ça servait au début, pourtant c'est simple : tout ce qu'il y a dans la zone de cuivre sera relié sans avoir à créer une piste.</p>
+<p>Vu que dans un PCB, beaucoup de composants ont besoin du GND (la terre) ça permet d'éviter de se prendre la tête à les relier ! (Je passe sur l'utilité principale qui est un peu technique)</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/gnd.png" alt="" width="1117" height="653"></p>
+<h3 id="mcetoc_1djemosila">Découpage de la carte</h3>
+<p>Kicad est capable de deviner le découpage de la carte (Edge.Cuts) mais c'est mieux de le faire soi-même, ici elle est très carrée, mais on peut faire des courbes.</p>
+<h3 id="mcetoc_1djempicab"><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/pcb3.png" alt="" width="1129" height="653"></h3>
+<h3 id="mcetoc_1djempm4qc">Sérigraphie</h3>
+<p>On peut écrire sur un PCB, ça permet de sacrement se simplifier la vie quand on aura un doute sur où est branché un composant ! (F.SilkS / B.SilkS)</p>
+<h3 id="mcetoc_1djen5qd6e"><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/seri.png" alt="" width="1073" height="649"><br>Vérification du PCB</h3>
+<p>Il peut être tentant de finir là, un petit clic sur la coccinelle, pour vérifier les connexions et hop on envoie, mais je vous conseille d'imprimer sur du papier votre PCB pour voir si les composants s'emboîtent bien!<img class="post__image--center" src="https://fr.usini.eu/media/posts/20/bug.png" alt="" width="31" height="33"></p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/pcb_test.jpg" alt="" width="1197" height="466">Pensez à retirer les zones de cuivres avant d'imprimer afin de ne pas gaspiller de l'encre !</p>
+<h3 id="mcetoc_1djengj5of">Traçage du PCB</h3>
+<p>Il ne reste plus qu'à tracer le PCB (en n'oubliant par de créer les fichiers de perçages !), mettre tout ça dans un fichier ZIP et l'envoyer !</p>
+<p><img class="post__image--center" src="https://fr.usini.eu/media/posts/20/trace.png" alt="" width="817" height="657"></p>
+<p>Voilà pour ce rapide tour de la création de PCB, en espérant que ça vous donnera envie de vous y mettre !</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Guide cartes électroniques</title>
         <author>
@@ -473,25 +547,6 @@
 </div>
 </div>
 <div class="chat-3bRxxu firefoxFixScrollFlex-cnI2ix"> </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Brancher des périphériques USB sur un ESP8266</title>
-        <author>
-            <name>Rémi Sarrailh</name>
-        </author>
-        <link href="https://fr.usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/"/>
-        <id>https://fr.usini.eu/brancher-des-peripheriques-usb-sur-un-esp8266/</id>
-
-        <updated>2019-05-31T18:59:28+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://fr.usini.eu/media/posts/10/USBHOSTMINI_hack.jpg" alt="" />
-                <script>// <![CDATA[
-window.location="https://wikifab.org/wiki/Brancher_des_p%C3%A9riph%C3%A9riques_USB_sur_un_ESP8266"
-// ]]></script>
             ]]>
         </content>
     </entry>
